@@ -7,6 +7,6 @@ https://pkgs.alpinelinux.org/package/edge/community/x86/py3-statsmodels
 
 https://pkgs.alpinelinux.org/package/edge/community/x86/py3-statsmodels
 
-This addon has been created as a solution to the installation limitations of the custom component [ESS Controller]!(https://github.com/mgenrique/ESS_ControllerHA) in Home Assistant OS
+This addon has been created as a solution to the installation limitations of the custom component [ESS Controller](https://github.com/mgenrique/ESS_ControllerHA) in Home Assistant OS
 
 
