@@ -1,5 +1,5 @@
 # Usa la imagen `arvethir/prophet` como base
-FROM arvethir/prophet:1.4
+FROM arvethir/prophet:1.0
 
 # Instalar Flask para la API (opcional)
 RUN pip install flask
