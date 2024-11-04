@@ -1,11 +1,10 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-# Añadir el repositorio de community y actualizar la lista de paquetes
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
-    apk update && \
-    apk add --no-cache py-scipy && \
-    ln -s /usr/lib/python3.12/site-packages/scipy /usr/local/lib/python3.12/site-packages/scipy
+# Instalar scipy desde PyPI
+RUN apk add --no-cache build-base gfortran && \
+    pip install scipy && \
+    apk del build-base gfortran
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
