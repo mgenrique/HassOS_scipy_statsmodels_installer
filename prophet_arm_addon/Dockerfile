@@ -1,10 +1,10 @@
-# Usa la imagen `peterpeerdeman/docker-prophet-arm` como base
-FROM peterpeerdeman/docker-prophet-arm
+# Usa la imagen `arvethir/prophet` como base
+FROM arvethir/prophet
 
-# Instalar Flask (opcional si necesitas una API)
+# Instalar Flask para la API (opcional)
 RUN pip install flask
 
-# Copiar el archivo de la API o cualquier otro archivo necesario
+# Copiar los archivos de la API
 COPY prophet_api.py /app/prophet_api.py
 COPY run.sh /app/run.sh
 RUN chmod +x /app/run.sh
