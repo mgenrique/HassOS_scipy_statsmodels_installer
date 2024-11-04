@@ -7,7 +7,7 @@ https://pkgs.alpinelinux.org/package/edge/community/x86/py3-statsmodels
 
 If you don't have statsmodels yet in Home Assistant OS, you can get it by installing this Addon. 
 
-To do this, in the HA UI, go to Settings --> Addons --> Addon Store.
+To do this, in the HA UI, go to `Settings` --> `Addons` --> `Addon Store`.
 
 In the button with the 3 dots, select Repositories and add the url: `https://github.com/mgenrique/HassOS_scipy_statsmodels_installer`
 
