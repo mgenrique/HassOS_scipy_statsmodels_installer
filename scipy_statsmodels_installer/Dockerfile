@@ -1,19 +1,21 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-# Paso 1: Instalar pip
-RUN apk add --no-cache py3-pip
+# Instalar pip, herramientas de compilación y dependencias específicas para scipy
+RUN apk add --no-cache py3-pip build-base gfortran musl-dev linux-headers openblas-dev
 
-# Paso 2: Instalar herramientas de compilación necesarias
-RUN apk add --no-cache build-base gfortran
+# Establecer variable de entorno para que scipy use OpenBLAS
+ENV BLAS=/usr/lib/libopenblas.so.0
+ENV LAPACK=/usr/lib/libopenblas.so.0
 
-# Paso 3: Instalar scipy usando pip
+# Instalar scipy usando pip
 RUN pip install scipy
 
-# Paso 4: Limpiar las herramientas de compilación para reducir el tamaño de la imagen
-RUN apk del build-base gfortran py3-pip
+# Limpiar las herramientas de compilación para reducir el tamaño de la imagen
+RUN apk del build-base gfortran musl-dev linux-headers openblas-dev py3-pip
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
 CMD [ "/run.sh" ]
+
