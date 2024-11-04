@@ -1,0 +1,16 @@
+{
+  "name": "Prophet ARM Prediction Add-on",
+  "version": "1.0",
+  "slug": "prophet_arm_addon",
+  "description": "Runs Prophet for time series forecasting on ARM architecture",
+  "arch": ["aarch64", "armv7"],
+  "startup": "application",
+  "boot": "manual",
+  "ports": {
+    "5000/tcp": 5000
+  },
+  "webui": "http://[HOST]:[PORT:5000]",
+  "options": {},
+  "schema": {}
+}
+
