@@ -1,4 +1,5 @@
 Todavía en pruebas.
-Por el momento probando a instalar scipy.
+Pero parece que ha conseguido instalar la libreria precompilada en
+https://pkgs.alpinelinux.org/package/edge/community/x86/py3-statsmodels
 
-Si funciona el siguiente paso será probar a que el addon instale tambien statsmodels el cual depende de scipy
+
