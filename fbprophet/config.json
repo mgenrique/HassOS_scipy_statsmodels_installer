@@ -1,0 +1,16 @@
+{
+  "name": "Prophet Prediction Add-on",
+  "version": "1.0",
+  "slug": "prophet_addon",
+  "description": "Runs Prophet for time series forecasting",
+  "arch": ["aarch64", "amd64", "armv7", "i386"],
+  "startup": "application",
+  "boot": "manual",
+  "ports": {
+    "5000/tcp": 5000
+  },
+  "webui": "http://[HOST]:[PORT:5000]",
+  "options": {},
+  "schema": {}
+}
+
