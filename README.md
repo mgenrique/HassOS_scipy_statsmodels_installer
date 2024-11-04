@@ -9,7 +9,7 @@ If you don't have statsmodels yet in Home Assistant OS, you can get it by instal
 
 To do this, in the HA UI, go to `Settings` --> `Addons` --> `Addon Store`.
 
-In the button with the 3 dots, select Repositories and add the url: `https://github.com/mgenrique/HassOS_scipy_statsmodels_installer`
+In the button with the 3 dots, select `Repositories` and add the url: `https://github.com/mgenrique/HassOS_scipy_statsmodels_installer`
 
 This will make the addon appear in the UI under HassOS_scipy_statsmodels_installer and you can install it.
 
