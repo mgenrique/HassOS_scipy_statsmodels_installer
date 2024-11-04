@@ -15,6 +15,6 @@ This will make the addon appear in the UI under HassOS_scipy_statsmodels_install
 
 This Addon will only run once and its only mission is to install the `statsmodels` library from the Alpine packages. Once the installation is complete you can remove the addon if you wish.
 
-This addon has been created as a solution to the installation limitations of the custom component [ESS Controller](https://github.com/mgenrique/ESS_ControllerHA) in Home Assistant OS
+This addon has been created as a solution to the installation limitations of the custom component [ESS Controller](https://github.com/mgenrique/ESS_ControllerHA) in Home Assistant OS.
 
 
