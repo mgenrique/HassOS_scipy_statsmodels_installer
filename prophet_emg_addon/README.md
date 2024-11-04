@@ -1,6 +1,11 @@
 This addon install de Docker container in:
 https://hub.docker.com/repository/docker/mgenrique/prophet-api/general
 
+if you need to pull it for other purposes you can do:
+```bash
+docker pull mgenrique/prophet-api:latest
+````
+
 Container with python:3.11-slim for arm that implements an api to generate predictions with Prophet. 
 Here’s a possible description for your Docker Hub repository:
 
